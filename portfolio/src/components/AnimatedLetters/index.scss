@@ -8,15 +8,17 @@
     min-width: 10px;
 }
 
-.text-animate-hover {
+.text-bounce {
     min-width: 10px;
     display: inline-block;
     animation-fill-mode: both;
+    animation: rubberBand 1s;
+    color: #ffd700;
+}
 
-    &:hover {
-        animation: rubberBand 0.75s;
-        color: #ffd700;
-    }
+.text-no-bounce {
+    min-width: 10px;
+    display: inline-block;
 }
 
 @for $i from 1 through 100 {

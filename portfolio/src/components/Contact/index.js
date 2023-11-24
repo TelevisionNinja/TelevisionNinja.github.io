@@ -38,16 +38,33 @@ export default function Contact() {
         );
     }
 
+    const index = 20;
+    const contactArray = [
+        'C',
+        'o',
+        'n',
+        't',
+        'a',
+        'c',
+        't',
+        ' ',
+        'm',
+        'e'
+    ];
+    const contactSpans = contactArray.map((char, i) => (
+        <AnimatedLetters
+            letterClass={letterClass}
+            strArray={[char]}
+            idx={i + index}
+        />
+    ));
+
     return (
         <>
             <div className="container contact-page">
                 <div className="text-zone">
                     <h1>
-                        <AnimatedLetters
-                        letterClass={letterClass}
-                        strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-                        idx={15}
-                        />
+                        {contactSpans}
                     </h1>
                     <p>
                         I am interested in professional software development. If you have any other requests or questions, don't hesitate to contact me using the form below.
@@ -89,20 +106,15 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="info-map">
-                    Slobodan Gajić,
+                    Arkansas <br />
                     <br />
-                    Serbia,
-                    <br />
-                    Branka RadiČevića 19, 22000 <br />
-                    Sremska Mitrovica <br />
-                    <br />
-                    <span>TelevisionNinja@gmail.com</span>
+                    TelevisionNinja@gmail.com
                 </div>
                 <div className="map-wrap">
-                    <MapContainer center={[44.96366, 19.61045]} zoom={13}>
-                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                        <Marker position={[44.96366, 19.61045]}>
-                            <Popup>Sloba lives here, come over for a cup of coffee</Popup>
+                    <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={13}>
+                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                        <Marker position={[34.74460280742035, -92.28834370644515]}>
+                            <Popup>Located here</Popup>
                         </Marker>
                     </MapContainer>
                 </div>
