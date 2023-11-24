@@ -1,7 +1,6 @@
 import './index.scss';
 import { useState } from 'react';
 import LogoImage from '../../assets/images/logo.png';
-import LogoSubtitle from '../../assets/images/name.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faLinkedin,
