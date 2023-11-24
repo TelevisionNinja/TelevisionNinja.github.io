@@ -25,7 +25,7 @@
     h1 {
         font-size: 53px;
         font-family: 'Coolvetica';
-        color: #ffd700;
+        color: #ffffff;
         font-weight: 400;
         margin-top: 0;
         position: relative;
@@ -60,6 +60,17 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+
+        h2 {
+            a {
+                color: #ffffff;
+                text-decoration: none;
+
+                &:hover {
+                    color: #56E31E;
+                }
+            }
+        }
     }
 
     .text-animate-hover {
