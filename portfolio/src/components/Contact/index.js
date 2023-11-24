@@ -73,7 +73,7 @@ export default function Contact() {
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className="half">
-                                    <input placeholder="Name" type="text" name="name" required />
+                                    <input placeholder="Name" type="text" name="name" required/>
                                 </li>
                                 <li className="half">
                                     <input
@@ -99,7 +99,7 @@ export default function Contact() {
                                     ></textarea>
                                 </li>
                                 <li>
-                                    <input type="submit" className="flat-button" value="SEND" />
+                                    <input type="submit" className="flat-button" value="SEND"/>
                                 </li>
                             </ul>
                         </form>
@@ -111,7 +111,7 @@ export default function Contact() {
                     TelevisionNinja@gmail.com
                 </div>
                 <div className="map-wrap">
-                    <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={13}>
+                    <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={5}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                         <Marker position={[34.74460280742035, -92.28834370644515]}>
                             <Popup>Located here</Popup>

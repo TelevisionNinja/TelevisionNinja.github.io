@@ -35,8 +35,6 @@ export default function Home() {
         'a'
     ];
     const jobArray = [
-        'A',
-        ' ',
         'S',
         'o',
         'f',
@@ -93,7 +91,7 @@ export default function Home() {
                     <br/>
                     {jobSpans}
                 </h1>
-                <h2>Software Engineer, Computer Scientist</h2>
+                <h2>B.S. in Computer Science, Minor in Mathematics</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             <Logo/>
