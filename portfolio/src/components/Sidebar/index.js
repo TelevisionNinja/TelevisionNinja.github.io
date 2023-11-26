@@ -40,14 +40,6 @@ export default function Sidebar() {
                 >
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
                 </NavLink>
-                <NavLink 
-                    activeclassname="active"
-                    className="about-link"
-                    to="/about"
-                    onClick={() => setShowNav(false)}
-                >
-                    <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
-                </NavLink>
                 <NavLink
                     activeclassname="active"
                     className="portfolio-link"
