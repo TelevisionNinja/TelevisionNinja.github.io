@@ -9,34 +9,17 @@ import {
     Marker,
     Popup
 } from 'react-leaflet';
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
 export default function Contact() {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const form = useRef();
 
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000);
     });
-
-    function sendEmail(e) {
-        e.preventDefault();
-
-        emailjs
-        .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-        .then(() => {
-                alert('Message successfully sent!');
-                window.location.reload(false);
-            }, () => {
-                alert('Failed to send the message, please try again');
-            }
-        );
-    }
 
     const index = 20;
     const contactArray = [
@@ -62,16 +45,16 @@ export default function Contact() {
     return (
         <>
             <div className="container contact-page">
-                <div className="text-zone" align="center">
+                <div className="text-zone">
                     <h1>
                         {contactSpans}
                     </h1>
                     <p>
                         I'm interested in professional software development. If you have any other requests or questions, don't hesitate to contact me.
+                        <h2>
+                            <a href="mailto:TelevisionNinja@gmail.com">TelevisionNinja@gmail.com</a>
+                        </h2>
                     </p>
-                    <h2>
-                        <a href="mailto:TelevisionNinja@gmail.com">TelevisionNinja@gmail.com</a>
-                    </h2>
                 </div>
                 <div className="map-wrap">
                     <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={5}>
