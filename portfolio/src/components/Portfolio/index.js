@@ -25,55 +25,55 @@ export default function Portfolio() {
     const projects = [
         {
             title: "AI Targeting Drone",
-            description: "AI Targeting Drone",
+            description: "Firmware and simulation of an AI targeting drone",
             imgUrl: projectImage1,
             link: "https://github.com/TelevisionNinja/hunter-killer-drone"
         },
         {
             title: "Cooperative Robotic Arm 3D Printing",
-            description: "Cooperative Robotic Arm 3D Printing",
+            description: "Cooperative 3D printing with industrial robotic arms",
             imgUrl: projectImage2,
             link: "https://gitlab.com/capstone-team16/ambots"
         },
         {
             title: "AI Diffusion Model",
-            description: "AI Diffusion Model",
+            description: "Denoising diffusion probabilistic model using PyTorch",
             imgUrl: projectImage3,
             link: "https://github.com/TelevisionNinja/Denoising-Diffusion-Probabilistic-Model"
         },
         {
             title: "Discord Bot",
-            description: "Discord Bot",
+            description: "Advanced Discord chatbot",
             imgUrl: projectImage4,
             link: "https://github.com/TelevisionNinja/Row-Bot"
         },
         {
             title: "Laser Tag System",
-            description: "Laser Tag System",
+            description: "A laser tag backend system",
             imgUrl: projectImage5,
             link: "https://github.com/nesrak1/LaserTagThing"
         },
         {
             title: "Search Engine",
-            description: "Search Engine",
+            description: "A search engine using information retrieval techniques",
             imgUrl: projectImage6,
             link: "https://github.com/TelevisionNinja/search-engine"
         },
         {
             title: "Campus Map",
-            description: "Campus Map",
+            description: "A map of the university campus",
             imgUrl: projectImage7,
             link: "https://github.com/TelevisionNinja/maps"
         },
         {
             title: "Basic CPU",
-            description: "Basic CPU",
+            description: "A basic MIPS-like single cycle CPU",
             imgUrl: projectImage8,
             link: "https://github.com/TelevisionNinja/basic-cpu"
         },
         {
             title: "MVC Mario",
-            description: "MVC Mario",
+            description: "A mario like game with a model view controller architecture",
             imgUrl: projectImage9,
             link: "https://github.com/TelevisionNinja/mvc-mario"
         }
