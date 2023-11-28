@@ -128,6 +128,9 @@ export default function Portfolio() {
                     <h1>
                         {portfolioSpans}
                     </h1>
+                    <p align="center">
+                        Check out my GitHub and GitLab for more projects!
+                    </p>
                 </div>
                 <div className="project">
                     {projectColumns}
