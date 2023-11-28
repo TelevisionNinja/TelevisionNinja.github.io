@@ -56,6 +56,9 @@ export default function Contact() {
                         </h2>
                     </p>
                 </div>
+                <div className="info-map">
+                    I am located in Arkansas, USA
+                </div>
                 <div className="map-wrap">
                     <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={5}>
                         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
