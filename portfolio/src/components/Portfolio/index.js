@@ -26,47 +26,56 @@ export default function Portfolio() {
         {
             title: "AI Targeting Drone",
             description: "AI Targeting Drone",
-            imgUrl: projectImage1
+            imgUrl: projectImage1,
+            link: "https://github.com/TelevisionNinja/hunter-killer-drone"
         },
         {
             title: "Cooperative Robotic Arm 3D Printing",
             description: "Cooperative Robotic Arm 3D Printing",
-            imgUrl: projectImage2
+            imgUrl: projectImage2,
+            link: "https://gitlab.com/capstone-team16/ambots"
         },
         {
             title: "AI Diffusion Model",
             description: "AI Diffusion Model",
-            imgUrl: projectImage3
+            imgUrl: projectImage3,
+            link: "https://github.com/TelevisionNinja/Denoising-Diffusion-Probabilistic-Model"
         },
         {
             title: "Discord Bot",
             description: "Discord Bot",
-            imgUrl: projectImage4
+            imgUrl: projectImage4,
+            link: "https://github.com/TelevisionNinja/Row-Bot"
         },
         {
             title: "Laser Tag System",
             description: "Laser Tag System",
-            imgUrl: projectImage5
+            imgUrl: projectImage5,
+            link: "https://github.com/nesrak1/LaserTagThing"
         },
         {
             title: "Search Engine",
             description: "Search Engine",
-            imgUrl: projectImage6
+            imgUrl: projectImage6,
+            link: "https://github.com/TelevisionNinja/search-engine"
         },
         {
             title: "Campus Map",
             description: "Campus Map",
-            imgUrl: projectImage7
+            imgUrl: projectImage7,
+            link: "https://github.com/TelevisionNinja/maps"
         },
         {
             title: "Basic CPU",
             description: "Basic CPU",
-            imgUrl: projectImage8
+            imgUrl: projectImage8,
+            link: "https://github.com/TelevisionNinja/basic-cpu"
         },
         {
             title: "MVC Mario",
             description: "MVC Mario",
-            imgUrl: projectImage9
+            imgUrl: projectImage9,
+            link: "https://github.com/TelevisionNinja/mvc-mario"
         }
     ];
 
@@ -100,6 +109,7 @@ export default function Portfolio() {
                     title={project.title}
                     description={project.description}
                     imgUrl={project.imgUrl}
+                    link={project.link}
                 />
             </Col>
         ));
