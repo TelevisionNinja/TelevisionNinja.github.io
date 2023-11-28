@@ -52,7 +52,7 @@ export default function Contact() {
                     <p>
                         I'm interested in professional software development. If you have any other requests or questions, don't hesitate to contact me.
                         <h2>
-                            <a href="mailto:TelevisionNinja@gmail.com">TelevisionNinja@gmail.com</a>
+                            <a href="mailto:StanleyC.Van@gmail.com">StanleyC.Van@gmail.com</a>
                         </h2>
                     </p>
                 </div>
