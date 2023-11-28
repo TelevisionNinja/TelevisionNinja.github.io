@@ -19,8 +19,7 @@
     animation-delay: 1s;
 }
 
-.container.contact-page,
-.container.portfolio-page {
+.container.contact-page {
     text-align: center;
 
     h1 {
@@ -81,6 +80,32 @@
     }
 }
 
+.container.portfolio-page {
+    text-align: center;
+
+    h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffffff;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: 0;
+    }
+
+    .text-zone {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .page {
         position: initial;
@@ -100,22 +125,6 @@
                 display: block;
                 padding: 20px;
                 box-sizing: border-box;
-            }
-        }
-
-        &.portfolio-page {
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-
-            h1.page-title {
-                margin-left: 20px;
-                margin-top: 20px;
-            }
-
-            .image-box {
-                height: 200px;
-                max-width: calc(50% - 10px);
             }
         }
     }
