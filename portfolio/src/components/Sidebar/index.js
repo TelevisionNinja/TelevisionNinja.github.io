@@ -9,7 +9,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faHome,
-    faUser,
     faEnvelope,
     faSuitcase,
     faBars,
