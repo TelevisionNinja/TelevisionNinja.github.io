@@ -54,17 +54,40 @@
             background: #56E31E;
         }
     }
+
+    .logo-container {
+        z-index: 0;
+        width: auto;
+        height: 40%;
+        opacity: 0;
+        top: 0;
+        right: auto;
+        bottom: 0;
+        left: 50%;
+        margin: auto;
+
+        .solid-logo {
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: 0;
+            margin: auto;
+            opacity: 0;
+            z-index: 1;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
-        .tags,
-        .home-page h1:before,
-        .home-page h1:after {
+    .tags,
+    .home-page h1:before,
+    .home-page h1:after {
         display: none;
     }
 
     .home-page .text-zone {
-        position: initial;
+        position: relative;
+        left: 25%;
         width: 100%;
         transform: none;
         padding: 10px;
@@ -72,24 +95,25 @@
     }
 
     .home-page .flat-button {
-        float: none;
+        float: left;
         display: block;
         margin: 20px auto 0 auto;
         width: 124px;
     }
 
-    .logo-container {
+    .home-page .logo-container {
+        padding: 25px;
         position: relative;
-        width: 100px;
+        width: 50%;
         height: auto;
         top: 50px;
         right: 0;
         box-sizing: border-box;
         margin: auto;
-        left: 0;
+        left: 10%;
     }
 
-    .logo-container svg {
+    .home-page .logo-container .solid-logo {
         position: absolute;
         top: auto;
         right: auto;
