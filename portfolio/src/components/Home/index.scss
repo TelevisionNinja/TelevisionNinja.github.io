@@ -15,15 +15,6 @@
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
-
-        img {
-            margin-left: 20px;
-            opacity: 0;
-            width: 32px;
-            height: auto;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
@@ -79,38 +70,26 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .tags,
-    .home-page h1:before,
-    .home-page h1:after {
-        display: none;
-    }
-
     .home-page .text-zone {
-        position: relative;
+        position: initial;
         left: 25%;
         width: 100%;
         transform: none;
-        padding: 10px;
         box-sizing: border-box;
+        text-align: center;
     }
 
     .home-page .flat-button {
-        float: left;
-        display: block;
-        margin: 20px auto 0 auto;
-        width: 124px;
+        display: inline-block;
+        float: none;
     }
 
     .home-page .logo-container {
-        padding: 25px;
         position: relative;
         width: 50%;
-        height: auto;
         top: 50px;
         right: 0;
-        box-sizing: border-box;
-        margin: auto;
-        left: 10%;
+        left: 25%;
     }
 
     .home-page .logo-container .solid-logo {
