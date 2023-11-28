@@ -1,6 +1,6 @@
 .project {
-    left: 30%;
     position: relative;
+    left: 35%;
 
     .row {
         display: flex;
@@ -14,13 +14,24 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1700px) {
     .project {
-        left: calc(50% - 250px / 2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+        overflow: hidden;
 
         .row {
             display: inline;
             flex-wrap: nowrap;
+        }
+
+        .col-md-4 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 35px;
         }
     }
 }
@@ -30,8 +41,8 @@
     border-radius: 25px;
     overflow:hidden;
 
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
 
     img {
         border-radius: 25px;

@@ -116,7 +116,21 @@
         height: auto;
         min-height: auto;
 
-        &.contact-page,
+        &.contact-page {
+            .text-zone {
+                position: initial;
+                transform: none;
+                width: 100%;
+                display: block;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .container {
         &.portfolio-page {
             .text-zone {
                 position: initial;
