@@ -35,6 +35,8 @@ export default function Home() {
         'a'
     ];
     const jobArray = [
+        'A',
+        ' ',
         'S',
         'o',
         'f',
