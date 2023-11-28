@@ -18,6 +18,8 @@ p {
 .project {
     position: relative;
     left: 35%;
+    max-height: 90vh;
+    overflow-y: auto;
 
     .row {
         display: flex;
@@ -27,7 +29,7 @@ p {
     .col-md-4 {
         display: flex;
         flex-wrap: wrap;
-        padding: 35px;
+        padding: 30px;
     }
 }
 
@@ -38,17 +40,34 @@ p {
         justify-content: center;
         align-items: center;
         position: unset;
-        overflow: hidden;
+        overflow-y: auto;
+        max-height: 75vh;
 
         .row {
             display: inline;
             flex-wrap: nowrap;
         }
 
-        .col-md-4 {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 35px;
+        &::-webkit-scrollbar { // chrome
+            width: 0;
+        }
+        scrollbar-width: none; // firefox
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+        overflow: hidden;
+        max-height: none;
+
+        .row {
+            display: inline;
+            flex-wrap: nowrap;
         }
     }
 }
