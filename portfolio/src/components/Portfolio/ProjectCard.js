@@ -2,7 +2,11 @@ import './index.scss';
 
 export default function ProjectCard({ title, description, imgUrl, link }) {
   return (
-    <a href={link}>
+    <a
+      href={link}
+      rel="noreferrer"
+      target="_blank"
+    >
       <div className="proj-imgbx">
         <img src={imgUrl}/>
         <div className="proj-txtx">
