@@ -32,12 +32,28 @@ p {
     }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1700px) and (min-height: calc(300px * 4 + 30px * 4)) {
     .project {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         position: unset;
+        max-height: max(100vh, calc(300px * 4 + 30px * 4));
+
+        &::-webkit-scrollbar { // chrome
+            width: 0;
+        }
+        scrollbar-width: none; // firefox
+    }
+}
+
+@media screen and (max-width: 1700px) and (max-height: calc(300px * 4 + 30px * 4)) {
+    .project {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: unset;
+        max-height: min(60vh, calc(300px * 4 + 30px * 4));
 
         &::-webkit-scrollbar { // chrome
             width: 0;
