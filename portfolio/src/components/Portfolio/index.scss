@@ -1,5 +1,5 @@
 p {
-    font-size: 13px;
+    font-size: 15px;
     color: #ffffff;
     font-family: sans-serif;
     font-weight: 300;
@@ -19,6 +19,7 @@ p {
     position: relative;
     left: 35%;
     max-height: 90vh;
+    height: auto;
     overflow-y: auto;
 
     .row {
@@ -27,8 +28,6 @@ p {
     }
 
     .col-md-4 {
-        display: flex;
-        flex-wrap: wrap;
         padding: 30px;
     }
 }
@@ -38,15 +37,7 @@ p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         position: unset;
-        overflow-y: auto;
-        max-height: 75vh;
-
-        .row {
-            display: inline;
-            flex-wrap: nowrap;
-        }
 
         &::-webkit-scrollbar { // chrome
             width: 0;
@@ -60,7 +51,6 @@ p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         position: unset;
         overflow: hidden;
         max-height: none;
