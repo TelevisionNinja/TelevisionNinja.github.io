@@ -59,12 +59,14 @@ export default function Home() {
     const startingIndex = 20;
     const index2 = startingIndex + greeting.length - 1;
     const index3 = index2 + nameArray.length - 1;
+    const delay = (index3 / 15 + 0.75 + 0.75) * 1000;
 
     const greetingSpans = greeting.map((char, i) => (
         <AnimatedLetters
             letterClass={letterClass}
             strArray={[char]}
             idx={i + startingIndex}
+            delay={delay}
         />
     ));
     const nameSpans = nameArray.map((char, i) => (
@@ -72,6 +74,7 @@ export default function Home() {
             letterClass={letterClass}
             strArray={[char]}
             idx={i + index2}
+            delay={delay}
         />
     ));
     const jobSpans = jobArray.map((char, i) => (
@@ -79,6 +82,7 @@ export default function Home() {
             letterClass={letterClass}
             strArray={[char]}
             idx={i + index3}
+            delay={delay}
         />
     ));
 

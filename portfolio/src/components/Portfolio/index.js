@@ -90,11 +90,13 @@ export default function Portfolio() {
         't',
         's'
     ];
+    const delay = ((index + portfolioArray.length - 1) / 15 + 0.75) * 1000;
     const portfolioSpans = portfolioArray.map((char, i) => (
         <AnimatedLetters
             letterClass={letterClass}
             strArray={[char]}
             idx={i + index}
+            delay={delay}
         />
     ));
 

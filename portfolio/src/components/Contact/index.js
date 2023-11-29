@@ -34,11 +34,13 @@ export default function Contact() {
         'm',
         'e'
     ];
+    const delay = ((index + contactArray.length - 1) / 15 + 0.75) * 1000;
     const contactSpans = contactArray.map((char, i) => (
         <AnimatedLetters
             letterClass={letterClass}
             strArray={[char]}
             idx={i + index}
+            delay={delay}
         />
     ));
 
