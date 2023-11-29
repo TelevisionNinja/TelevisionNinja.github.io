@@ -70,6 +70,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .home-page {
+        h1 {
+            font-size: max(min(calc(100vw / 10), 56px), 26px);
+        }
+
+        h2 {
+            font-size: max(min(calc(100vw / 40), 15px), 13px);
+        }
+    }
+
     .home-page .text-zone {
         position: initial;
         left: 25%;
