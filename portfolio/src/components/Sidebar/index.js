@@ -63,7 +63,7 @@ export default function Sidebar() {
                     className='close-icon'
                 />
             </nav>
-            <ul>
+            <ul className={showNav ? 'mobile-show' : ''}>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/stanley-v-386922191/"

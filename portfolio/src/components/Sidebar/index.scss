@@ -116,6 +116,11 @@
                 color: #4d4d4e;
             }
 
+            .anchor-icon {
+                width: 24px;
+                height: auto;
+            }
+
             &:hover {
                 .anchor-icon {
                     color: #56E31E;
@@ -140,6 +145,16 @@
             display: none;
         }
 
+        ul {
+            &.mobile-show {
+                display: block;
+            }
+
+            bottom: 1%;
+            z-index: 2;
+            position: fixed;
+        }
+
         nav {
             width: 100%;
             top: 0;
@@ -158,6 +173,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                color: #ffffff;
             }
 
             a:after {
