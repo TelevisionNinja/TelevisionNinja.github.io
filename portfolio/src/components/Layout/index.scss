@@ -23,17 +23,16 @@
     text-align: center;
 
     h1 {
-        font-size: 53px;
+        font-size: max(min(calc(100vw / 10), 56px), 30px);
         font-family: 'Coolvetica';
         color: #ffffff;
         font-weight: 400;
         margin-top: 0;
         position: relative;
-        margin-bottom: 40px;
     }
 
     p {
-        font-size: 13px;
+        font-size: 15px;
         color: #fff;
         font-family: sans-serif;
         font-weight: 300;
@@ -49,6 +48,8 @@
         }
 
         h2 {
+            margin-top: 40px;
+            font-size: max(min(calc(100vw / 10), 23px), 15px);
             a {
                 color: #ffffff;
                 text-decoration: none;
@@ -82,13 +83,12 @@
     text-align: center;
 
     h1 {
-        font-size: 53px;
+        font-size: max(min(calc(100vw / 10), 56px), 30px);
         font-family: 'Coolvetica';
         color: #ffffff;
         font-weight: 400;
         margin-top: 0;
         position: relative;
-        margin-bottom: 40px;
         left: 0;
     }
 

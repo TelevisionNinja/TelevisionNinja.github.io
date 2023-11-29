@@ -9,9 +9,9 @@
     }
 
     h1 {
-        color: #fff;
+        color: #ffffff;
         font-size: 56px;
-        line-height: 53px;
+        line-height: 56px;
         margin: 0;
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -54,7 +54,7 @@
         top: 0;
         right: auto;
         bottom: 0;
-        left: 50%;
+        left: 51%;
         margin: auto;
 
         .solid-logo {
@@ -72,11 +72,12 @@
 @media screen and (max-width: 1200px) {
     .home-page {
         h1 {
-            font-size: max(min(calc(100vw / 10), 56px), 26px);
+            font-size: max(min(calc(100vw / 10), 56px), 30px);
+            line-height: max(min(calc(100vw / 10), 56px), 25px);
         }
 
         h2 {
-            font-size: max(min(calc(100vw / 40), 15px), 13px);
+            letter-spacing: 2px;
         }
     }
 
