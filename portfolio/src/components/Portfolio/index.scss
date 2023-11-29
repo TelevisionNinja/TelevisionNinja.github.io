@@ -18,6 +18,8 @@ p {
 .project {
     position: relative;
     left: 35%;
+    top: 50%;
+    transform: translate(0, -50%);
     max-height: 90vh;
     height: auto;
     overflow-y: auto;
@@ -39,6 +41,7 @@ p {
         justify-content: center;
         position: unset;
         max-height: min(100vh - 240px, calc(300px * 4 + 30px * 4));
+        transform: none;
 
         &::-webkit-scrollbar { // chrome
             width: 0;
@@ -55,6 +58,7 @@ p {
         position: unset;
         overflow: hidden;
         max-height: none;
+        transform: none;
 
         .row {
             display: inline;
