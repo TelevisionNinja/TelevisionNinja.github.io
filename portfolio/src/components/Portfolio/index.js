@@ -8,6 +8,8 @@ import projectImage6 from '../../assets/images/projects/search.png';
 import projectImage7 from '../../assets/images/projects/maps.png';
 import projectImage8 from '../../assets/images/projects/cpu.jpg';
 import projectImage9 from '../../assets/images/projects/mario.png';
+import projectImage10 from '../../assets/images/projects/mandelbrot.png';
+import projectImage11 from '../../assets/images/projects/flocking.png';
 import {
     Row,
     Col
@@ -49,7 +51,7 @@ export default function Portfolio() {
         },
         {
             title: "Laser Tag System",
-            description: "A laser tag backend system",
+            description: "A laser tag frontend and backend system",
             imgUrl: projectImage5,
             link: "https://github.com/nesrak1/LaserTagThing"
         },
@@ -58,6 +60,18 @@ export default function Portfolio() {
             description: "A search engine using information retrieval techniques",
             imgUrl: projectImage6,
             link: "https://github.com/TelevisionNinja/search-engine"
+        },
+        {
+            title: "Mandelbrot Set",
+            description: "The Mandelbrot set rendered using p5.js and shaders",
+            imgUrl: projectImage10,
+            link: "https://github.com/TelevisionNinja/mandelbrot-set"
+        },
+        {
+            title: "Flocking Simulation",
+            description: "Flocking simulation with boids and octrees rendered using p5.js",
+            imgUrl: projectImage11,
+            link: "https://github.com/TelevisionNinja/Flocking-Simulation"
         },
         {
             title: "Campus Map",
