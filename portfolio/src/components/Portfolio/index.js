@@ -93,7 +93,7 @@ export default function Portfolio() {
         }
     ];
 
-    const index = 20;
+    const index = 20; // start after loader
     const portfolioArray = [
         'P',
         'r',
@@ -104,6 +104,8 @@ export default function Portfolio() {
         't',
         's'
     ];
+    // (starting delay index / 15 second delay + 0.75 second delay) * 1000 ms
+    // delays come from animated letters scss
     const delay = ((index + portfolioArray.length - 1) / 15 + 0.75) * 1000;
     const portfolioSpans = portfolioArray.map((char, i) => (
         <AnimatedLetters

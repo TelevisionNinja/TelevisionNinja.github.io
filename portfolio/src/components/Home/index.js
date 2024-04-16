@@ -56,9 +56,11 @@ export default function Home() {
         'r'
     ];
 
-    const startingIndex = 20;
+    const startingIndex = 20; // start after loader
     const index2 = startingIndex + greeting.length - 1;
     const index3 = index2 + nameArray.length - 1;
+    // (starting delay index / 15 second delay + 0.75 second delay + 0.75 second delay) * 1000 ms
+    // delays come from animated letters scss
     const delay = (index3 / 15 + 0.75 + 0.75) * 1000;
 
     const greetingSpans = greeting.map((char, i) => (

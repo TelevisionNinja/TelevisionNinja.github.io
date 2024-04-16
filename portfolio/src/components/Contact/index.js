@@ -21,7 +21,7 @@ export default function Contact() {
         }, 3000);
     });
 
-    const index = 20;
+    const index = 20; // start after loader
     const contactArray = [
         'C',
         'o',
@@ -34,6 +34,8 @@ export default function Contact() {
         'm',
         'e'
     ];
+    // (starting delay index / 15 second delay + 0.75 second delay) * 1000 ms
+    // delays come from animated letters scss
     const delay = ((index + contactArray.length - 1) / 15 + 0.75) * 1000;
     const contactSpans = contactArray.map((char, i) => (
         <AnimatedLetters
