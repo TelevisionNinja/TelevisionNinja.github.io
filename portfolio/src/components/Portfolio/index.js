@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from './ProjectCard';
 import projectImage1 from '../../assets/images/projects/drone.gif';
 import projectImage2 from '../../assets/images/projects/3dp.png';
 import projectImage3 from '../../assets/images/projects/diffusion.gif';
@@ -13,83 +13,82 @@ import projectImage11 from '../../assets/images/projects/flocking.png';
 import {
     Row,
     Col
-} from "react-bootstrap";
+} from 'react-bootstrap';
 import 'animate.css';
-import AnimatedLetters from "../AnimatedLetters";
+import AnimatedLetters from '../AnimatedLetters';
 import { useState } from 'react';
 import Loader from 'react-loaders';
 import './index.scss';
-
 
 export default function Portfolio() {
     const [letterClass, setLetterClass] = useState('text-animate');
 
     const projects = [
         {
-            title: "AI Targeting Drone",
-            description: "Firmware and simulation of an AI targeting drone",
+            title: 'AI Targeting Drone',
+            description: 'Firmware and simulation of an AI targeting drone',
             imgUrl: projectImage1,
-            link: "https://github.com/TelevisionNinja/hunter-killer-drone"
+            link: 'https://github.com/TelevisionNinja/hunter-killer-drone'
         },
         {
-            title: "Cooperative Robotic Arm 3D Printing",
-            description: "Cooperative 3D printing with industrial robotic arms",
+            title: 'Cooperative Robotic Arm 3D Printing',
+            description: 'Cooperative 3D printing with industrial robotic arms',
             imgUrl: projectImage2,
-            link: "https://gitlab.com/capstone-team16/ambots"
+            link: 'https://gitlab.com/capstone-team16/ambots'
         },
         {
-            title: "AI Diffusion Model",
-            description: "Denoising diffusion probabilistic model using PyTorch",
+            title: 'AI Diffusion Model',
+            description: 'Denoising diffusion probabilistic model using PyTorch',
             imgUrl: projectImage3,
-            link: "https://github.com/TelevisionNinja/Denoising-Diffusion-Probabilistic-Model"
+            link: 'https://github.com/TelevisionNinja/Denoising-Diffusion-Probabilistic-Model'
         },
         {
-            title: "Discord Bot",
-            description: "Advanced Discord chatbot",
+            title: 'Discord Bot',
+            description: 'Advanced Discord chatbot',
             imgUrl: projectImage4,
-            link: "https://github.com/TelevisionNinja/Row-Bot"
+            link: 'https://github.com/TelevisionNinja/Row-Bot'
         },
         {
-            title: "Laser Tag System",
-            description: "A laser tag frontend and backend system",
+            title: 'Laser Tag System',
+            description: 'A laser tag frontend and backend system',
             imgUrl: projectImage5,
-            link: "https://github.com/nesrak1/LaserTagThing"
+            link: 'https://github.com/nesrak1/LaserTagThing'
         },
         {
-            title: "Search Engine",
-            description: "A search engine using information retrieval techniques",
+            title: 'Search Engine',
+            description: 'A search engine using information retrieval techniques',
             imgUrl: projectImage6,
-            link: "https://github.com/TelevisionNinja/search-engine"
+            link: 'https://github.com/TelevisionNinja/search-engine'
         },
         {
-            title: "Mandelbrot Set",
-            description: "The Mandelbrot set rendered using p5.js and shaders",
+            title: 'Mandelbrot Set',
+            description: 'The Mandelbrot set rendered using p5.js and shaders',
             imgUrl: projectImage10,
-            link: "https://github.com/TelevisionNinja/mandelbrot-set"
+            link: 'https://github.com/TelevisionNinja/mandelbrot-set'
         },
         {
-            title: "Flocking Simulation",
-            description: "Flocking simulation with boids and octrees rendered using p5.js",
+            title: 'Flocking Simulation',
+            description: 'Flocking simulation with boids and octrees rendered using p5.js',
             imgUrl: projectImage11,
-            link: "https://github.com/TelevisionNinja/Flocking-Simulation"
+            link: 'https://github.com/TelevisionNinja/Flocking-Simulation'
         },
         {
-            title: "Campus Map",
-            description: "A map of the university campus",
+            title: 'Campus Map',
+            description: 'A map of the university campus',
             imgUrl: projectImage7,
-            link: "https://github.com/TelevisionNinja/maps"
+            link: 'https://github.com/TelevisionNinja/maps'
         },
         {
-            title: "Basic CPU",
-            description: "A basic MIPS-like single cycle CPU",
+            title: 'Basic CPU',
+            description: 'A basic MIPS-like single cycle CPU',
             imgUrl: projectImage8,
-            link: "https://github.com/TelevisionNinja/basic-cpu"
+            link: 'https://github.com/TelevisionNinja/basic-cpu'
         },
         {
-            title: "MVC Mario",
-            description: "A mario like game with a model view controller architecture",
+            title: 'MVC Mario',
+            description: 'A mario like game with a model view controller architecture',
             imgUrl: projectImage9,
-            link: "https://github.com/TelevisionNinja/mvc-mario"
+            link: 'https://github.com/TelevisionNinja/mvc-mario'
         }
     ];
 
