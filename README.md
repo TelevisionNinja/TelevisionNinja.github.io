@@ -6,7 +6,7 @@ https://televisionninja.github.io/
 This website was built with:
 - React: front end library
 - Create React App: for creating, running, and deployment
-- gh-pages: github pages deployment
+- gh-pages: GitHub Pages deployment
 - sass: styling
 - animate.css: animations
 - fortawesome: icons
