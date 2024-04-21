@@ -54,7 +54,7 @@ export default function Contact() {
                         {contactSpans}
                     </h1>
                     <p>
-                        I'm interested in professional software development. If you have any other requests or questions, don't hesitate to contact me.
+                        I'm interested in professional software development and engineering. If you have any other requests or questions, don't hesitate to contact me.
                         <h2>
                             <a href="mailto:StanleyC.Van@gmail.com">StanleyC.Van@gmail.com</a>
                         </h2>
