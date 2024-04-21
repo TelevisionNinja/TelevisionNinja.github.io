@@ -60,7 +60,7 @@ export default function Sidebar() {
                     icon={faClose}
                     color="#ffffff"
                     size="3x"
-                    className='close-icon'
+                    className="close-icon"
                 />
             </nav>
             <ul className={showNav ? 'mobile-show' : ''}>
@@ -109,7 +109,7 @@ export default function Sidebar() {
                 icon={faBars}
                 color="#ffffff"
                 size="3x"
-                className='hamburger-icon'
+                className="hamburger-icon"
             />
         </div>
     );
