@@ -1,7 +1,4 @@
-import {
-    useEffect,
-    useState
-} from 'react';
+import { useState } from 'react';
 import Loader from 'react-loaders';
 import {
     MapContainer,
@@ -14,12 +11,6 @@ import './index.scss';
 
 export default function Contact() {
     const [letterClass, setLetterClass] = useState('text-animate');
-
-    useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000);
-    });
 
     const index = 20; // start after loader
     const contactArray = [
