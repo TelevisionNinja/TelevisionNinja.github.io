@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from '../AnimatedLetters/index.js';
 import './index.scss';
 import LogoImage from '../../assets/images/logo.png';
 

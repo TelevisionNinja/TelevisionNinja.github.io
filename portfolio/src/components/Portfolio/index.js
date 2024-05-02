@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard';
+import ProjectCard from './ProjectCard.js';
 import projectImage1 from '../../assets/images/projects/drone.gif';
 import projectImage2 from '../../assets/images/projects/3dp.png';
 import projectImage3 from '../../assets/images/projects/diffusion.gif';
