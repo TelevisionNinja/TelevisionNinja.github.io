@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import Loader from 'react-loaders';
-import {
-    MapContainer,
-    TileLayer,
-    Marker,
-    Popup
-} from 'react-leaflet';
+import Map from './Map.js';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 
@@ -51,17 +46,7 @@ export default function Contact() {
                         </h2>
                     </p>
                 </div>
-                <div className="info-map">
-                    I am located in Arkansas, USA
-                </div>
-                <div className="map-wrap">
-                    <MapContainer center={[34.74460280742035, -92.28834370644515]} zoom={5}>
-                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                        <Marker position={[34.74460280742035, -92.28834370644515]}>
-                            <Popup>Arkansas</Popup>
-                        </Marker>
-                    </MapContainer>
-                </div>
+                <Map/>
             </div>
             <Loader type="pacman"/>
         </>

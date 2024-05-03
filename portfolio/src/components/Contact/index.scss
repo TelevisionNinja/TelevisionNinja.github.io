@@ -13,6 +13,13 @@
     animation-fill-mode: forwards;
 }
 
+.cesium {
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+}
+
 .info-map {
     position: absolute;
     background: #000000;

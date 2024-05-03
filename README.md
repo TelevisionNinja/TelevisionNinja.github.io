@@ -12,8 +12,11 @@ This website was built with:
 - fortawesome: icons
 - loaders.css: loading animation
 - react-loaders: integrating the loaders into React
-- OpenStreetMap: map tiles
-- leaflet: map
-- react-leaflet: integrating the map into React
+- cesium: globe map
+- craco-cesium: globe map
+- html-webpack-plugin: globe map
+- OpenStreetMap: flat map tiles
+- leaflet: flat map
+- react-leaflet: integrating the flat map into React
 - react-router-dom: routing
 - react-bootstrap: grid layout for the projects page
