@@ -10,6 +10,8 @@ import projectImage8 from '../../assets/images/projects/cpu.jpg';
 import projectImage9 from '../../assets/images/projects/mario.png';
 import projectImage10 from '../../assets/images/projects/mandelbrot.png';
 import projectImage11 from '../../assets/images/projects/flocking.png';
+import projectImage12 from '../../assets/images/projects/flappy.png';
+import projectImage13 from '../../assets/images/projects/vtube.png';
 import {
     Row,
     Col
@@ -41,6 +43,18 @@ export default function Portfolio() {
             description: 'Denoising diffusion probabilistic model using PyTorch',
             imgUrl: projectImage3,
             link: 'https://github.com/TelevisionNinja/Denoising-Diffusion-Probabilistic-Model'
+        },
+        {
+            title: 'Flappy Bird AI',
+            description: 'A neuroevolution AI for flappy bird',
+            imgUrl: projectImage12,
+            link: 'https://github.com/TelevisionNinja/Flappy-Bird-AI'
+        },
+        {
+            title: 'AI Vtuber',
+            description: 'An AI that listens and talks to you',
+            imgUrl: projectImage13,
+            link: 'https://github.com/TelevisionNinja/chat'
         },
         {
             title: 'Discord Bot',
