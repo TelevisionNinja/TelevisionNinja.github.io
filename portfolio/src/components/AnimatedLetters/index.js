@@ -16,7 +16,9 @@ export default function AnimatedLetters({ letterClass, strArray, idx, delay }) {
 
   function handleMouseEnter() {
     setLetterClass('text-bounce');
-    setTimeout(() => setLetterClass('text-no-bounce'), 1000);
+    setTimeout(() => {
+      setLetterClass('text-no-bounce');
+    }, 1000);
   }
 
   function noFunction() {
